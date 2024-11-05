@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hodlinfo</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>HODLINFO</h1>
+        <div class="controls">
+          <button class="currency-button">INR</button>
+          <button class="currency-button">BTC</button>
+          <button class="currency-button">BUY BTC</button>
+        </div>
+        <div class="telegram">
+          <button class="telegram-button">Connect Telegram</button>
+          <div class="toggle-switch">
+            <input type="checkbox" id="toggle" />
+            <label for="toggle"></label>
+          </div>
+        </div>
+      </header>
+
+      <div class="trade-info">
+        <div class="trade-percentage">
+          <p>0.1 %</p>
+          <span>5 Mins</span>
+        </div>
+        <div class="trade-percentage">
+          <p>0.96 %</p>
+          <span>1 Hour</span>
+        </div>
+        <div class="best-price">
+          <p>Best Price to Trade</p>
+          <h2>₹ 26,56,110</h2>
+          <span>Average BTC/INR net price including commission</span>
+        </div>
+        <div class="trade-percentage">
+          <p>2.73 %</p>
+          <span>1 Day</span>
+        </div>
+        <div class="trade-percentage">
+          <p>7.51 %</p>
+          <span>7 Days</span>
+        </div>
+      </div>
+
+      <table id="tickers-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Last Traded Price</th>
+            <th>Buy Price</th>
+            <th>Sell Price</th>
+            <th>Volume</th>
+            <th>Base Unit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data will be populated here by JavaScript -->
+        </tbody>
+      </table>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
